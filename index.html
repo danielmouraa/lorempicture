@@ -1,44 +1,88 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Lorem Picture</title>
-</head>
-<body>
-	<header>
-		<div>
-			<h1 class="logo">Lorem Picture</h1>
-			<span>- random images generator -</span>
-		</div>
-	</header>
-	<section class="main">
-		<div>
-			<section class="image-options">
-				<form action="#">
-					<legend>Customize options</legend>
-					<fieldset>
-						<div>
-							<label></label>
-							<select>
-								<option>Random</option>
-							</select>
-							
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Lorem Picture</title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<meta name="author" content="http://www.talk2.com.br" />
+		<link rel="shortcut icon" href="images/ico/favicon.ico" type="image/x-icon" />
+		<link type="text/css" rel="stylesheet" href="styles/base.css" media="screen" />
+		<link type="text/css" rel="stylesheet" href="styles/estructure.css" media="screen" />
+		<!--[if lt IE 9]><script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+		<!--[if IE 7]><link type="text/css" rel="stylesheet" href="styles/ie7.css" media="screen" /><![endif]-->
+	</head>
+
+	<body>
+		<header>
+			<div>
+				<h1><img src="images/lgo/lorem-picture.png" alt="Lorem Picture - Random images generator" /></h1>
+				<p class="description">- random images generator -</p>
+			</div>
+		</header>
+
+		<section id="wrapper">
+			<div>
+				<section class="options">
+					<form action="#">
+						<legend>Customize options</legend>
+						<div class="type">
+							<label for="image-type">type:</label>
+							<input type="text" name="image-type" />
 						</div>
-						
-					</fieldset>
-				</form>
-					
-				
-			</section>
-				
+						<div class="scale">
+							<label for="colorful"><input type="radio" name="colorful" /> colorful</label>
+							<label for="grayscale"><input type="radio" name="grayscale" /> grayscale</label>
+						</div>
+						<div class="amount">
+							<label for="amount">amount:</label>
+							<select name="amount">
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+							</select>
+						</div>
+						<div class="dimensions">
+							<div>
+								<label for="image-width">width:</label>
+								<input type="text" name="image-width" />
+								<span>px</span>
+							</div>
+							<div>
+								<label for="image-height">height:</label>
+								<input type="text" name="image-height" />
+								<span>px</span>
+							</div>
+						</div>
+						<button type="submit">generate</button>
+					</form>
+				</section>
+
+				<section class="highlight">
+					<section class="generated-images">
+						<ul>
+							<li><img src="images/fto/lorem-1.jpg" alt="Lorem Picture 1" /></li>
+							<li><img src="images/fto/lorem-2.jpg" alt="Lorem Picture 2" /></li>
+						</ul>
+					</section>
+					<nav class="arrows">
+						<a href="#this" class="previous">Previous image</a>
+						<a href="#this" class="next">Next image</a>
+					</nav>
+					<nav class="scroll">
+						<a href="#this"></a>
+					</nav>
+				</section>
+			</div>
+		</section>
+
+		<footer>
 			
-		</div>
-	</section>
-	<footer>
-		
-	</footer>
-		
-	
-	
-</body>
+		</footer>
+
+		<script type="text/javascript" src="scripts/plugins/jquery-1.6.3.min.js"></script>
+		<script type="text/javascript" src="scripts/base.js"></script>
+	</body>
 </html>
