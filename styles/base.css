@@ -5,76 +5,26 @@
 	padding: 0;
 	border: none;
 	text-decoration: none;
-	font-family: inherit;
+	font-family: 'ProximaNova_Semibold';
 	font-size: 100%;
 }
 
 body {
-	color: #;
+	color: #404040;
 	font-size: 62.5%;
-	font-family: arial, verdana, helvetica, sans-serif;
-	background: url(../images/bkg/) no-repeat;
+	background: #DDD;
 }
 
 legend { display: none; }
 ol, ul { list-style: none; }
 a:hover { text-decoration: underline; }
 table { border-collapse: collapse; border-spacing: 0; }
+a:active, button:active { position: relative; top: 1px; }
 
 header, nav, section,
 article, aside, footer { display: block; }
 
-section#wrapper {
-	
-}
-
-/* -------------|
-/* - HEADER
-/* ----- */
-
-header {
-	
-}
-
-/* -------------|
-/* - CONTENT
-/* ----- */
-
-article {
-	
-}
-
-/* -------------|
-/* - SIDEBAR
-/* ----- */
-
-aside {
-	
-}
-
-/* -------------|
-/* - FOOTER
-/* ----- */
-
-footer {
-	
-}
-
-/* Image Replacement */
-
-.image-replace {
-	display: block;
-	overflow: hidden;
-	text-indent: -9999px;
-}
-
-/* Image Replacement para Inputs */
-
-.input-replace {
-	display: block;
-	content: "";
-	line-height: 0;
-	text-indent: -9999px;
-	cursor: pointer;
-	border: none !important;
+header > div, main > div, footer > div {
+	width: 835px;
+	margin: 0 auto;
 }

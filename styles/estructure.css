@@ -1,27 +1,89 @@
-
 /* -------------|
 /* - HEADER
 /* ----- */
 
 header {
-	
+	width: 100%;
+	height: 145px;
+	margin-bottom: 30px;
+	border-top: 4px solid #000;
+	background: #cacaca;
+}
+
+header .logo {
+	width: 345px;
+	margin: 40px auto 0;
+}
+
+header .logo .slogan {
+	display: block;
+	font-size: 1.6em;
+	font-family: 'ProximaNova_regularItalic';
+	text-align: center;
 }
 
 /* -------------|
 /* - CONTENT
 /* ----- */
 
-article {
-	
+main {
+	font-size: 1.6em;
 }
 
-/* -------------|
-/* - SIDEBAR
-/* ----- */
+main section.options {
+	width: 795px;
+	padding: 20px;
+	margin: 0 auto 30px;
+	overflow: hidden;
+	background: #d6d6d6;
 
-aside {
-	
+	-webkit-border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
 }
+
+main section.options form > div {
+	height: 70px;
+	padding-left: 20px;
+	float: left;
+	border-right: 1px solid #b7b7b7;
+	border-left: 1px solid #eaeaea;
+}
+
+main section.options form .type {
+	width: 175px;
+	padding: 0;
+	border-left: none;
+}
+
+main section.options form .scale {
+	width: 95px;
+}
+
+main section.options form .amount {
+	width: 94px;
+}
+
+main section.options form .dimensions {
+	width: 245px;
+	border-right: 0;
+}
+
+main section.options form .dimensions div {
+	width: 105px;
+	margin-left: 20px;
+	float: left;
+	overflow: hidden;
+}
+
+main section.options form .dimensions div:first-child {
+	margin-left: 0;
+}
+
+main section.options form label {
+	display: block;
+}
+
 
 /* -------------|
 /* - FOOTER
