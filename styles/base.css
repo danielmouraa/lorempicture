@@ -28,3 +28,21 @@ header > div, main > div, footer > div {
 	width: 835px;
 	margin: 0 auto;
 }
+
+button {
+	height: 45px;
+	padding: 0 10px;
+	cursor: pointer;
+	border-bottom: 3px solid #000;
+	text-align: center;
+	font-size: 18px;
+	font-family: Helvetica;
+	font-weight: bold;
+	line-height: 42px;
+	color: #FFF;
+	background: #1a1a1a;
+
+	-webkit-border-radius: 3px 3px 3px 3px;
+	-moz-border-radius: 3px 3px 3px 3px;
+	border-radius: 3px 3px 3px 3px;
+}

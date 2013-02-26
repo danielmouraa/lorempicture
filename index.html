@@ -31,11 +31,20 @@
 						<legend>Customize options</legend>
 						<div class="type">
 							<label for="image-type">type:</label>
-							<input type="text" name="image-type" />
+							<select name="image-type">
+								<option>Random</option>
+							</select>
 						</div>
+
 						<div class="scale">
-							<label for="colorful"><input type="radio" name="colorful" /> colorful</label>
-							<label for="grayscale"><input type="radio" name="grayscale" /> grayscale</label>
+							<label for="colorful">
+								<input type="radio" name="colorful" />
+								<span class="ativo">colorful</span>
+							</label>
+							<label for="grayscale">
+								<input type="radio" name="grayscale" />
+								<span>grayscale</span>
+							</label>
 						</div>
 						<div class="amount">
 							<label for="amount">amount:</label>
@@ -59,7 +68,7 @@
 								<span>px</span>
 							</div>
 						</div>
-						<button type="submit">generate</button>
+						<button type="submit" id="generate">generate</button>
 					</form>
 				</section>
 
@@ -71,8 +80,8 @@
 						</ul>
 					</section>
 					<nav class="arrows">
-						<a href="#this" class="previous">Previous image</a>
-						<a href="#this" class="next">Next image</a>
+						<button class="previous" title="Previous image"><span>Previous image</span></button>
+						<button class="next" title="Next image"><span>Next image</span></button>
 					</nav>
 					<nav class="scroll">
 						<a href="#this"></a>
@@ -83,7 +92,7 @@
 
 		<footer>
 			<div class="social-networks">
-				<div class="facebook">
+<!-- 				<div class="facebook">
 					<div id="fb-root"></div>
 					<script>(function(d, s, id) {
 						var js, fjs = d.getElementsByTagName(s)[0];
@@ -97,7 +106,7 @@
 				<div class="twitter">
 					<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
 					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-				</div>
+				</div> -->
 			</div>
 
 			<div class="github">

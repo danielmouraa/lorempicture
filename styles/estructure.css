@@ -32,9 +32,11 @@ main {
 
 main section.options {
 	width: 795px;
+	height: 70px;
 	padding: 20px;
 	margin: 0 auto 30px;
 	overflow: hidden;
+	position: relative;
 	background: #d6d6d6;
 
 	-webkit-border-radius: 5px 5px 5px 5px;
@@ -46,6 +48,8 @@ main section.options form > div {
 	height: 70px;
 	padding-left: 20px;
 	float: left;
+	overflow: hidden;
+	position: relative;
 	border-right: 1px solid #b7b7b7;
 	border-left: 1px solid #eaeaea;
 }
@@ -57,7 +61,29 @@ main section.options form .type {
 }
 
 main section.options form .scale {
-	width: 95px;
+	width: 105px;
+	height: 65px;
+	padding-top: 5px;
+}
+
+main section.options form .scale input {
+	position: absolute;
+	left: -30px;
+	top: -30px;
+}
+
+main section.options form .scale span {
+	height: 20px;
+	cursor: pointer;
+	padding-left: 28px;
+	margin-bottom: 15px;
+	display: block;
+	font-size: 15px;
+	background: url(../images/ico/radio.png) no-repeat left top;
+}
+
+main section.options form .scale span.ativo {
+	background-position: left bottom;
 }
 
 main section.options form .amount {
@@ -65,7 +91,7 @@ main section.options form .amount {
 }
 
 main section.options form .dimensions {
-	width: 245px;
+	width: 250px;
 	border-right: 0;
 }
 
@@ -76,14 +102,63 @@ main section.options form .dimensions div {
 	overflow: hidden;
 }
 
+main section.options form .dimensions div label {
+	height: 16px;
+	padding-left: 25px;
+	margin-bottom: 7px;
+	line-height: 16px;
+	background: url(../images/ico/resize.png) no-repeat left top;
+}
+
+main section.options form .dimensions div label[for="image-height"] {
+	background-position: left bottom;
+}
+
+main section.options form .dimensions div input {
+	width: 82px;
+	height: 45px;
+	padding-top: 2px;
+	line-height: 45px;
+	font-size: 20px;
+	text-align: center;
+	background: #FFF;
+
+	-webkit-box-shadow: 0px 2px 1px #AAA inset;
+	-moz-box-shadow: 0px 2px 1px #AAA inset;
+	box-shadow: 0px 2px 1px #AAA inset;
+}
+
+main section.options form .dimensions div span {
+	margin-top: 13px;
+	float: right;
+	display: block;
+	filter: alpha(opacity=50);
+	-khtml-opacity: 0.5;
+	-moz-opacity: 0.5;
+	opacity: 0.5;
+
+}
+
 main section.options form .dimensions div:first-child {
 	margin-left: 0;
 }
 
 main section.options form label {
 	display: block;
+	margin-bottom: 9px;
 }
 
+main section.options form #generate {
+	width: 107px;
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+
+main section.options form #generate:active {
+	bottom: 19px;
+	top: auto;
+}
 
 /* -------------|
 /* - FOOTER
